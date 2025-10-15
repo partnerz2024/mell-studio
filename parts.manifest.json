@@ -1,0 +1,2491 @@
+{
+  "generatedAt": "2025-10-15T15:03:16.068Z",
+  "root": "열한 스튜디오",
+  "count": 276,
+  "parts": [
+    {
+      "id": "accessory-0",
+      "layerType": "accessory",
+      "name": "accessory / 감성카페피어싱(gold).png",
+      "filePath": "accessory/감성카페피어싱(gold).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-1",
+      "layerType": "accessory",
+      "name": "accessory / 감성카페피어싱.png",
+      "filePath": "accessory/감성카페피어싱.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-2",
+      "layerType": "accessory",
+      "name": "accessory / 능률이오르는에어팟.png",
+      "filePath": "accessory/능률이오르는에어팟.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-3",
+      "layerType": "accessory",
+      "name": "accessory / 마스크.png",
+      "filePath": "accessory/마스크.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-4",
+      "layerType": "accessory",
+      "name": "accessory / 사각안경(black).png",
+      "filePath": "accessory/사각안경(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-5",
+      "layerType": "accessory",
+      "name": "accessory / 사각안경(red).png",
+      "filePath": "accessory/사각안경(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-6",
+      "layerType": "accessory",
+      "name": "accessory / 생명과학신의안경.png",
+      "filePath": "accessory/생명과학신의안경.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-7",
+      "layerType": "accessory",
+      "name": "accessory / 서태지선글라스.png",
+      "filePath": "accessory/서태지선글라스.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-8",
+      "layerType": "accessory",
+      "name": "accessory / 심플한목걸이.png",
+      "filePath": "accessory/심플한목걸이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-9",
+      "layerType": "accessory",
+      "name": "accessory / 원형안경(gold).png",
+      "filePath": "accessory/원형안경(gold).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-10",
+      "layerType": "accessory",
+      "name": "accessory / 원형안경(normal).png",
+      "filePath": "accessory/원형안경(normal).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-11",
+      "layerType": "accessory",
+      "name": "accessory / 원형안경(silver).png",
+      "filePath": "accessory/원형안경(silver).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-12",
+      "layerType": "accessory",
+      "name": "accessory / 조커분장.png",
+      "filePath": "accessory/조커분장.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-13",
+      "layerType": "accessory",
+      "name": "accessory / 초롱이의금목걸이.png",
+      "filePath": "accessory/초롱이의금목걸이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-14",
+      "layerType": "accessory",
+      "name": "accessory / 크리스털피어싱.png",
+      "filePath": "accessory/크리스털피어싱.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-15",
+      "layerType": "accessory",
+      "name": "accessory / 페이스타투.png",
+      "filePath": "accessory/페이스타투.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-16",
+      "layerType": "accessory",
+      "name": "accessory / 피어싱(gold).png",
+      "filePath": "accessory/피어싱(gold).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-17",
+      "layerType": "accessory",
+      "name": "accessory / 피어싱(surgical_steel).png",
+      "filePath": "accessory/피어싱(surgical_steel).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-18",
+      "layerType": "accessory",
+      "name": "accessory / 피어싱2(gold).png",
+      "filePath": "accessory/피어싱2(gold).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-19",
+      "layerType": "accessory",
+      "name": "accessory / 피어싱2(silver).png",
+      "filePath": "accessory/피어싱2(silver).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-20",
+      "layerType": "accessory",
+      "name": "accessory / 피어싱사이드(gold).png",
+      "filePath": "accessory/피어싱사이드(gold).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-21",
+      "layerType": "accessory",
+      "name": "accessory / 피어싱사이드(surgical_steel).png",
+      "filePath": "accessory/피어싱사이드(surgical_steel).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "accessory-22",
+      "layerType": "accessory",
+      "name": "accessory / 헤드셋.png",
+      "filePath": "accessory/헤드셋.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-23",
+      "layerType": "clothes",
+      "name": "cloth /  가죽자켓.png",
+      "filePath": "cloth/ 가죽자켓.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-24",
+      "layerType": "clothes",
+      "name": "cloth / f1자켓(black).png",
+      "filePath": "cloth/f1자켓(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-25",
+      "layerType": "clothes",
+      "name": "cloth / f1자켓(red).png",
+      "filePath": "cloth/f1자켓(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-26",
+      "layerType": "clothes",
+      "name": "cloth / 갈색셔츠.png",
+      "filePath": "cloth/갈색셔츠.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-27",
+      "layerType": "clothes",
+      "name": "cloth / 교복.png",
+      "filePath": "cloth/교복.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-28",
+      "layerType": "clothes",
+      "name": "cloth / 김하온붕붕.png",
+      "filePath": "cloth/김하온붕붕.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-29",
+      "layerType": "clothes",
+      "name": "cloth / 꾸힘포마셔츠.png",
+      "filePath": "cloth/꾸힘포마셔츠.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-30",
+      "layerType": "clothes",
+      "name": "cloth / 농구08.png",
+      "filePath": "cloth/농구08.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-31",
+      "layerType": "clothes",
+      "name": "cloth / 농구유니폼.png",
+      "filePath": "cloth/농구유니폼.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-32",
+      "layerType": "clothes",
+      "name": "cloth / 느좋룩(green).png",
+      "filePath": "cloth/느좋룩(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-33",
+      "layerType": "clothes",
+      "name": "cloth / 느좋룩(red).png",
+      "filePath": "cloth/느좋룩(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-34",
+      "layerType": "clothes",
+      "name": "cloth / 니트와목도리.png",
+      "filePath": "cloth/니트와목도리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-35",
+      "layerType": "clothes",
+      "name": "cloth / 마름모조끼(gray).png",
+      "filePath": "cloth/마름모조끼(gray).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-36",
+      "layerType": "clothes",
+      "name": "cloth / 마름모조끼(green).png",
+      "filePath": "cloth/마름모조끼(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-37",
+      "layerType": "clothes",
+      "name": "cloth / 멋진.png",
+      "filePath": "cloth/멋진.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-38",
+      "layerType": "clothes",
+      "name": "cloth / 베이쁘(red).png",
+      "filePath": "cloth/베이쁘(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-39",
+      "layerType": "clothes",
+      "name": "cloth / 서태지.png",
+      "filePath": "cloth/서태지.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-40",
+      "layerType": "clothes",
+      "name": "cloth / 슈크림(black).png",
+      "filePath": "cloth/슈크림(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-41",
+      "layerType": "clothes",
+      "name": "cloth / 슈크림(white).png",
+      "filePath": "cloth/슈크림(white).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-42",
+      "layerType": "clothes",
+      "name": "cloth / 스뚜시.png",
+      "filePath": "cloth/스뚜시.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-43",
+      "layerType": "clothes",
+      "name": "cloth / 아이스한자켓.png",
+      "filePath": "cloth/아이스한자켓.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-44",
+      "layerType": "clothes",
+      "name": "cloth / 오겜(456).png",
+      "filePath": "cloth/오겜(456).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-45",
+      "layerType": "clothes",
+      "name": "cloth / 오겜관리자.png",
+      "filePath": "cloth/오겜관리자.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-46",
+      "layerType": "clothes",
+      "name": "cloth / 이름뭐라할까.png",
+      "filePath": "cloth/이름뭐라할까.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-47",
+      "layerType": "clothes",
+      "name": "cloth / 일진1.png",
+      "filePath": "cloth/일진1.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-48",
+      "layerType": "clothes",
+      "name": "cloth / 져지(black).png",
+      "filePath": "cloth/져지(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-49",
+      "layerType": "clothes",
+      "name": "cloth / 져지(blue).png",
+      "filePath": "cloth/져지(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-50",
+      "layerType": "clothes",
+      "name": "cloth / 져지(pink).png",
+      "filePath": "cloth/져지(pink).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-51",
+      "layerType": "clothes",
+      "name": "cloth / 져지(red).png",
+      "filePath": "cloth/져지(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-52",
+      "layerType": "clothes",
+      "name": "cloth / 줄무늬오버핏과후드티.png",
+      "filePath": "cloth/줄무늬오버핏과후드티.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-53",
+      "layerType": "clothes",
+      "name": "cloth / 지뢰.png",
+      "filePath": "cloth/지뢰.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-54",
+      "layerType": "clothes",
+      "name": "cloth / 처키 옷.png",
+      "filePath": "cloth/처키 옷.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-55",
+      "layerType": "clothes",
+      "name": "cloth / 초롱이.png",
+      "filePath": "cloth/초롱이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-56",
+      "layerType": "clothes",
+      "name": "cloth / 카트.png",
+      "filePath": "cloth/카트.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-57",
+      "layerType": "clothes",
+      "name": "cloth / 특별한(special).png",
+      "filePath": "cloth/특별한(special).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-58",
+      "layerType": "clothes",
+      "name": "cloth / 편집티(blue).png",
+      "filePath": "cloth/편집티(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-59",
+      "layerType": "clothes",
+      "name": "cloth / 편집티(red).png",
+      "filePath": "cloth/편집티(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-60",
+      "layerType": "clothes",
+      "name": "cloth / 하키(green).png",
+      "filePath": "cloth/하키(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-61",
+      "layerType": "clothes",
+      "name": "cloth / 후드(blue).png",
+      "filePath": "cloth/후드(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-62",
+      "layerType": "clothes",
+      "name": "cloth / 후드(gray).png",
+      "filePath": "cloth/후드(gray).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-63",
+      "layerType": "clothes",
+      "name": "cloth / 흰검옷.png",
+      "filePath": "cloth/흰검옷.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "clothes-64",
+      "layerType": "clothes",
+      "name": "cloth / 힙한조끼패딩.png",
+      "filePath": "cloth/힙한조끼패딩.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-65",
+      "layerType": "face",
+      "name": "face / basic / eye / 1.png",
+      "filePath": "face/basic/eye/1.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-66",
+      "layerType": "face",
+      "name": "face / basic / eye / 2.png",
+      "filePath": "face/basic/eye/2.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-67",
+      "layerType": "face",
+      "name": "face / basic / eye / 3.png",
+      "filePath": "face/basic/eye/3.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-68",
+      "layerType": "face",
+      "name": "face / basic / eye / 윙크1.png",
+      "filePath": "face/basic/eye/윙크1.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-69",
+      "layerType": "face",
+      "name": "face / basic / eye / 윙크2.png",
+      "filePath": "face/basic/eye/윙크2.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-70",
+      "layerType": "face",
+      "name": "face / basic / eye_color / blue.png",
+      "filePath": "face/basic/eye_color/blue.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-71",
+      "layerType": "face",
+      "name": "face / basic / eye_color / blue_윙크.png",
+      "filePath": "face/basic/eye_color/blue_윙크.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-72",
+      "layerType": "face",
+      "name": "face / basic / eye_color / red.png",
+      "filePath": "face/basic/eye_color/red.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-73",
+      "layerType": "face",
+      "name": "face / basic / eye_color / red_윙크.png",
+      "filePath": "face/basic/eye_color/red_윙크.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-74",
+      "layerType": "face",
+      "name": "face / basic / eye_color / yellow.png",
+      "filePath": "face/basic/eye_color/yellow.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-75",
+      "layerType": "face",
+      "name": "face / basic / eye_color / yellow_윙크.png",
+      "filePath": "face/basic/eye_color/yellow_윙크.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-76",
+      "layerType": "face",
+      "name": "face / basic / hair_base / special_base.png",
+      "filePath": "face/basic/hair_base/special_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-77",
+      "layerType": "face",
+      "name": "face / basic / hair_base / 고양이머리_base.png",
+      "filePath": "face/basic/hair_base/고양이머리_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-78",
+      "layerType": "face",
+      "name": "face / basic / hair_base / 로제_base.png",
+      "filePath": "face/basic/hair_base/로제_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-79",
+      "layerType": "face",
+      "name": "face / basic / hair_base / 버섯머리_base.png",
+      "filePath": "face/basic/hair_base/버섯머리_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-80",
+      "layerType": "face",
+      "name": "face / basic / hair_base / 아이키_base.png",
+      "filePath": "face/basic/hair_base/아이키_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-81",
+      "layerType": "face",
+      "name": "face / basic / hair_base / 양갈래_base.png",
+      "filePath": "face/basic/hair_base/양갈래_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-82",
+      "layerType": "face",
+      "name": "face / basic / mouth / 기본입.png",
+      "filePath": "face/basic/mouth/기본입.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-83",
+      "layerType": "face",
+      "name": "face / basic / mouth / 소심한입.png",
+      "filePath": "face/basic/mouth/소심한입.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-84",
+      "layerType": "face",
+      "name": "face / basic / mouth / 웃는입.png",
+      "filePath": "face/basic/mouth/웃는입.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-85",
+      "layerType": "face",
+      "name": "face / basic / mouth / 웃는입2.png",
+      "filePath": "face/basic/mouth/웃는입2.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-86",
+      "layerType": "face",
+      "name": "face / basic / mouth / 화난입.png",
+      "filePath": "face/basic/mouth/화난입.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-87",
+      "layerType": "face",
+      "name": "face / basic / normal_base / 기본_base.png",
+      "filePath": "face/basic/normal_base/기본_base.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-88",
+      "layerType": "face",
+      "name": "face / basic / sclera / normal_sclera.png",
+      "filePath": "face/basic/sclera/normal_sclera.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-89",
+      "layerType": "face",
+      "name": "face / basic / sclera / 윙크_sclera.png",
+      "filePath": "face/basic/sclera/윙크_sclera.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "face-90",
+      "layerType": "face",
+      "name": "face / basic / skin_color / skin_color.png",
+      "filePath": "face/basic/skin_color/skin_color.png",
+      "format": "png",
+      "tintable": true,
+      "tags": []
+    },
+    {
+      "id": "hair-91",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / special.png",
+      "filePath": "hair/bappe(red)/special.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-92",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 가르마.png",
+      "filePath": "hair/bappe(red)/가르마.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-93",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 강백호.png",
+      "filePath": "hair/bappe(red)/강백호.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-94",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 고양이머리(긴).png",
+      "filePath": "hair/bappe(red)/고양이머리(긴).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-95",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 고양이머리.png",
+      "filePath": "hair/bappe(red)/고양이머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-96",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 곱슬긴머리(black).png",
+      "filePath": "hair/bappe(red)/곱슬긴머리(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-97",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 곱슬긴머리(red).png",
+      "filePath": "hair/bappe(red)/곱슬긴머리(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-98",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 과학실력이상승하는머리.png",
+      "filePath": "hair/bappe(red)/과학실력이상승하는머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-99",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 꽁지머리.png",
+      "filePath": "hair/bappe(red)/꽁지머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-100",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 농구(black).png",
+      "filePath": "hair/bappe(red)/농구(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-101",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 농구(blue).png",
+      "filePath": "hair/bappe(red)/농구(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-102",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 농구(brown).png",
+      "filePath": "hair/bappe(red)/농구(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-103",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 단정한머리.png",
+      "filePath": "hair/bappe(red)/단정한머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-104",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 더벅머리.png",
+      "filePath": "hair/bappe(red)/더벅머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-105",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 드레드록.png",
+      "filePath": "hair/bappe(red)/드레드록.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-106",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 로제(yellow).png",
+      "filePath": "hair/bappe(red)/로제(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-107",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 리프컷(black).png",
+      "filePath": "hair/bappe(red)/리프컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-108",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 리프컷(blue).png",
+      "filePath": "hair/bappe(red)/리프컷(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-109",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 리프컷(brown).png",
+      "filePath": "hair/bappe(red)/리프컷(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-110",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 리프컷(yellow).png",
+      "filePath": "hair/bappe(red)/리프컷(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-111",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 반다나드레드(blue).png",
+      "filePath": "hair/bappe(red)/반다나드레드(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-112",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 반다나드레드(red).png",
+      "filePath": "hair/bappe(red)/반다나드레드(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-113",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 버섯머리.png",
+      "filePath": "hair/bappe(red)/버섯머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-114",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 사무라이(black).png",
+      "filePath": "hair/bappe(red)/사무라이(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-115",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 사무라이(brown).png",
+      "filePath": "hair/bappe(red)/사무라이(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-116",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 삭발.png",
+      "filePath": "hair/bappe(red)/삭발.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-117",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 생머리(brown).png",
+      "filePath": "hair/bappe(red)/생머리(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-118",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 숏컷(black).png",
+      "filePath": "hair/bappe(red)/숏컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-119",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 숏컷(green).png",
+      "filePath": "hair/bappe(red)/숏컷(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-120",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 쉐프머리(blue).png",
+      "filePath": "hair/bappe(red)/쉐프머리(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-121",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 쉐프머리.png",
+      "filePath": "hair/bappe(red)/쉐프머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-122",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 싸이.png",
+      "filePath": "hair/bappe(red)/싸이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-123",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 아이키.png",
+      "filePath": "hair/bappe(red)/아이키.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-124",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 앞머리빗자루(black).png",
+      "filePath": "hair/bappe(red)/앞머리빗자루(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-125",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 양갈래(black).png",
+      "filePath": "hair/bappe(red)/양갈래(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-126",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 양갈래.png",
+      "filePath": "hair/bappe(red)/양갈래.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-127",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 테니스공.png",
+      "filePath": "hair/bappe(red)/테니스공.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-128",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 파마(black).png",
+      "filePath": "hair/bappe(red)/파마(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-129",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 파마(yellow).png",
+      "filePath": "hair/bappe(red)/파마(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-130",
+      "layerType": "hair",
+      "name": "hair / bappe(red) / 표범.png",
+      "filePath": "hair/bappe(red)/표범.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-131",
+      "layerType": "hair",
+      "name": "hair / beret / special.png",
+      "filePath": "hair/beret/special.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-132",
+      "layerType": "hair",
+      "name": "hair / beret / 가르마.png",
+      "filePath": "hair/beret/가르마.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-133",
+      "layerType": "hair",
+      "name": "hair / beret / 강백호.png",
+      "filePath": "hair/beret/강백호.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-134",
+      "layerType": "hair",
+      "name": "hair / beret / 고양이머리(긴).png",
+      "filePath": "hair/beret/고양이머리(긴).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-135",
+      "layerType": "hair",
+      "name": "hair / beret / 고양이머리.png",
+      "filePath": "hair/beret/고양이머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-136",
+      "layerType": "hair",
+      "name": "hair / beret / 곱슬긴머리(black).png",
+      "filePath": "hair/beret/곱슬긴머리(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-137",
+      "layerType": "hair",
+      "name": "hair / beret / 곱슬긴머리(red).png",
+      "filePath": "hair/beret/곱슬긴머리(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-138",
+      "layerType": "hair",
+      "name": "hair / beret / 과학실력이상승하는머리.png",
+      "filePath": "hair/beret/과학실력이상승하는머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-139",
+      "layerType": "hair",
+      "name": "hair / beret / 꽁지머리.png",
+      "filePath": "hair/beret/꽁지머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-140",
+      "layerType": "hair",
+      "name": "hair / beret / 농구(black).png",
+      "filePath": "hair/beret/농구(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-141",
+      "layerType": "hair",
+      "name": "hair / beret / 농구(blue).png",
+      "filePath": "hair/beret/농구(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-142",
+      "layerType": "hair",
+      "name": "hair / beret / 농구(brown).png",
+      "filePath": "hair/beret/농구(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-143",
+      "layerType": "hair",
+      "name": "hair / beret / 더벅머리.png",
+      "filePath": "hair/beret/더벅머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-144",
+      "layerType": "hair",
+      "name": "hair / beret / 드레드록.png",
+      "filePath": "hair/beret/드레드록.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-145",
+      "layerType": "hair",
+      "name": "hair / beret / 로제(yellow).png",
+      "filePath": "hair/beret/로제(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-146",
+      "layerType": "hair",
+      "name": "hair / beret / 리프컷(black).png",
+      "filePath": "hair/beret/리프컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-147",
+      "layerType": "hair",
+      "name": "hair / beret / 리프컷(blue).png",
+      "filePath": "hair/beret/리프컷(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-148",
+      "layerType": "hair",
+      "name": "hair / beret / 리프컷(brown).png",
+      "filePath": "hair/beret/리프컷(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-149",
+      "layerType": "hair",
+      "name": "hair / beret / 리프컷(yellow).png",
+      "filePath": "hair/beret/리프컷(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-150",
+      "layerType": "hair",
+      "name": "hair / beret / 반다나드레드(blue).png",
+      "filePath": "hair/beret/반다나드레드(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-151",
+      "layerType": "hair",
+      "name": "hair / beret / 반다나드레드(red).png",
+      "filePath": "hair/beret/반다나드레드(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-152",
+      "layerType": "hair",
+      "name": "hair / beret / 반묶음(black).png",
+      "filePath": "hair/beret/반묶음(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-153",
+      "layerType": "hair",
+      "name": "hair / beret / 반묶음(brown).png",
+      "filePath": "hair/beret/반묶음(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-154",
+      "layerType": "hair",
+      "name": "hair / beret / 반묶음(yellow).png",
+      "filePath": "hair/beret/반묶음(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-155",
+      "layerType": "hair",
+      "name": "hair / beret / 버섯머리.png",
+      "filePath": "hair/beret/버섯머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-156",
+      "layerType": "hair",
+      "name": "hair / beret / 사무라이(black).png",
+      "filePath": "hair/beret/사무라이(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-157",
+      "layerType": "hair",
+      "name": "hair / beret / 사무라이(brown).png",
+      "filePath": "hair/beret/사무라이(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-158",
+      "layerType": "hair",
+      "name": "hair / beret / 삭발.png",
+      "filePath": "hair/beret/삭발.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-159",
+      "layerType": "hair",
+      "name": "hair / beret / 생머리(brown).png",
+      "filePath": "hair/beret/생머리(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-160",
+      "layerType": "hair",
+      "name": "hair / beret / 숏컷(black).png",
+      "filePath": "hair/beret/숏컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-161",
+      "layerType": "hair",
+      "name": "hair / beret / 숏컷(green).png",
+      "filePath": "hair/beret/숏컷(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-162",
+      "layerType": "hair",
+      "name": "hair / beret / 쉐프머리(blue).png",
+      "filePath": "hair/beret/쉐프머리(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-163",
+      "layerType": "hair",
+      "name": "hair / beret / 쉐프머리.png",
+      "filePath": "hair/beret/쉐프머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-164",
+      "layerType": "hair",
+      "name": "hair / beret / 싸이.png",
+      "filePath": "hair/beret/싸이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-165",
+      "layerType": "hair",
+      "name": "hair / beret / 아이키.png",
+      "filePath": "hair/beret/아이키.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-166",
+      "layerType": "hair",
+      "name": "hair / beret / 앞머리빗자루(black).png",
+      "filePath": "hair/beret/앞머리빗자루(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-167",
+      "layerType": "hair",
+      "name": "hair / beret / 양갈래(black).png",
+      "filePath": "hair/beret/양갈래(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-168",
+      "layerType": "hair",
+      "name": "hair / beret / 양갈래.png",
+      "filePath": "hair/beret/양갈래.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-169",
+      "layerType": "hair",
+      "name": "hair / beret / 테니스공.png",
+      "filePath": "hair/beret/테니스공.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-170",
+      "layerType": "hair",
+      "name": "hair / beret / 파마(black).png",
+      "filePath": "hair/beret/파마(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-171",
+      "layerType": "hair",
+      "name": "hair / beret / 파마(yellow).png",
+      "filePath": "hair/beret/파마(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-172",
+      "layerType": "hair",
+      "name": "hair / beret / 표범.png",
+      "filePath": "hair/beret/표범.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-173",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / special.png",
+      "filePath": "hair/normal_beanie/special.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-174",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 가르마.png",
+      "filePath": "hair/normal_beanie/가르마.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-175",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 강백호.png",
+      "filePath": "hair/normal_beanie/강백호.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-176",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 고양이머리(긴).png",
+      "filePath": "hair/normal_beanie/고양이머리(긴).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-177",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 고양이머리.png",
+      "filePath": "hair/normal_beanie/고양이머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-178",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 곱슬긴머리(black).png",
+      "filePath": "hair/normal_beanie/곱슬긴머리(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-179",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 곱슬긴머리(red).png",
+      "filePath": "hair/normal_beanie/곱슬긴머리(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-180",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 과학실력이상승하는머리.png",
+      "filePath": "hair/normal_beanie/과학실력이상승하는머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-181",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 꽁지머리.png",
+      "filePath": "hair/normal_beanie/꽁지머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-182",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 농구(black).png",
+      "filePath": "hair/normal_beanie/농구(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-183",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 농구(blue).png",
+      "filePath": "hair/normal_beanie/농구(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-184",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 농구(brown).png",
+      "filePath": "hair/normal_beanie/농구(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-185",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 더벅머리.png",
+      "filePath": "hair/normal_beanie/더벅머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-186",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 드레드록.png",
+      "filePath": "hair/normal_beanie/드레드록.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-187",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 로제(yellow).png",
+      "filePath": "hair/normal_beanie/로제(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-188",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 리프컷(black).png",
+      "filePath": "hair/normal_beanie/리프컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-189",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 리프컷(blue).png",
+      "filePath": "hair/normal_beanie/리프컷(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-190",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 리프컷(brown).png",
+      "filePath": "hair/normal_beanie/리프컷(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-191",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 리프컷(yellow).png",
+      "filePath": "hair/normal_beanie/리프컷(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-192",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 묶은머리.png",
+      "filePath": "hair/normal_beanie/묶은머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-193",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 반다나드레드(blue).png",
+      "filePath": "hair/normal_beanie/반다나드레드(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-194",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 반다나드레드(red).png",
+      "filePath": "hair/normal_beanie/반다나드레드(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-195",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 반묶음(black).png",
+      "filePath": "hair/normal_beanie/반묶음(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-196",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 반묶음(brown).png",
+      "filePath": "hair/normal_beanie/반묶음(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-197",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 반묶음(yellow).png",
+      "filePath": "hair/normal_beanie/반묶음(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-198",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 버섯머리.png",
+      "filePath": "hair/normal_beanie/버섯머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-199",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 사무라이(black).png",
+      "filePath": "hair/normal_beanie/사무라이(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-200",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 사무라이(brown).png",
+      "filePath": "hair/normal_beanie/사무라이(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-201",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 삭발.png",
+      "filePath": "hair/normal_beanie/삭발.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-202",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 생머리(brown).png",
+      "filePath": "hair/normal_beanie/생머리(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-203",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 숏컷(black).png",
+      "filePath": "hair/normal_beanie/숏컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-204",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 숏컷(green).png",
+      "filePath": "hair/normal_beanie/숏컷(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-205",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 쉐프머리(blue).png",
+      "filePath": "hair/normal_beanie/쉐프머리(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-206",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 쉐프머리.png",
+      "filePath": "hair/normal_beanie/쉐프머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-207",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 싸이.png",
+      "filePath": "hair/normal_beanie/싸이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-208",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 아이키.png",
+      "filePath": "hair/normal_beanie/아이키.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-209",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 앞머리빗자루(black).png",
+      "filePath": "hair/normal_beanie/앞머리빗자루(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-210",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 양갈래(black).png",
+      "filePath": "hair/normal_beanie/양갈래(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-211",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 양갈래.png",
+      "filePath": "hair/normal_beanie/양갈래.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-212",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 양갈래당고(black).png",
+      "filePath": "hair/normal_beanie/양갈래당고(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-213",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 양갈래당고(red).png",
+      "filePath": "hair/normal_beanie/양갈래당고(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-214",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 테니스공.png",
+      "filePath": "hair/normal_beanie/테니스공.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-215",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 파마(black).png",
+      "filePath": "hair/normal_beanie/파마(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-216",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 파마(yellow).png",
+      "filePath": "hair/normal_beanie/파마(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-217",
+      "layerType": "hair",
+      "name": "hair / normal_beanie / 표범.png",
+      "filePath": "hair/normal_beanie/표범.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-218",
+      "layerType": "hair",
+      "name": "hair / special.png",
+      "filePath": "hair/special.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-219",
+      "layerType": "hair",
+      "name": "hair / 가르마.png",
+      "filePath": "hair/가르마.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-220",
+      "layerType": "hair",
+      "name": "hair / 강백호.png",
+      "filePath": "hair/강백호.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-221",
+      "layerType": "hair",
+      "name": "hair / 고양이머리(긴).png",
+      "filePath": "hair/고양이머리(긴).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-222",
+      "layerType": "hair",
+      "name": "hair / 고양이머리.png",
+      "filePath": "hair/고양이머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-223",
+      "layerType": "hair",
+      "name": "hair / 곱슬긴머리(black).png",
+      "filePath": "hair/곱슬긴머리(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-224",
+      "layerType": "hair",
+      "name": "hair / 곱슬긴머리(red).png",
+      "filePath": "hair/곱슬긴머리(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-225",
+      "layerType": "hair",
+      "name": "hair / 과학실력이상승하는머리.png",
+      "filePath": "hair/과학실력이상승하는머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-226",
+      "layerType": "hair",
+      "name": "hair / 꽁지머리.png",
+      "filePath": "hair/꽁지머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-227",
+      "layerType": "hair",
+      "name": "hair / 농구(black).png",
+      "filePath": "hair/농구(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-228",
+      "layerType": "hair",
+      "name": "hair / 농구(blue).png",
+      "filePath": "hair/농구(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-229",
+      "layerType": "hair",
+      "name": "hair / 농구(brown).png",
+      "filePath": "hair/농구(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-230",
+      "layerType": "hair",
+      "name": "hair / 단정한머리.png",
+      "filePath": "hair/단정한머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-231",
+      "layerType": "hair",
+      "name": "hair / 더벅머리.png",
+      "filePath": "hair/더벅머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-232",
+      "layerType": "hair",
+      "name": "hair / 드레드록.png",
+      "filePath": "hair/드레드록.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-233",
+      "layerType": "hair",
+      "name": "hair / 로제(yellow).png",
+      "filePath": "hair/로제(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-234",
+      "layerType": "hair",
+      "name": "hair / 리프컷(black).png",
+      "filePath": "hair/리프컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-235",
+      "layerType": "hair",
+      "name": "hair / 리프컷(blue).png",
+      "filePath": "hair/리프컷(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-236",
+      "layerType": "hair",
+      "name": "hair / 리프컷(brown).png",
+      "filePath": "hair/리프컷(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-237",
+      "layerType": "hair",
+      "name": "hair / 리프컷(yellow).png",
+      "filePath": "hair/리프컷(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-238",
+      "layerType": "hair",
+      "name": "hair / 묶은머리.PNG",
+      "filePath": "hair/묶은머리.PNG",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-239",
+      "layerType": "hair",
+      "name": "hair / 반다나드레드(blue).png",
+      "filePath": "hair/반다나드레드(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-240",
+      "layerType": "hair",
+      "name": "hair / 반다나드레드(red).png",
+      "filePath": "hair/반다나드레드(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-241",
+      "layerType": "hair",
+      "name": "hair / 반묶음(black).png",
+      "filePath": "hair/반묶음(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-242",
+      "layerType": "hair",
+      "name": "hair / 반묶음(brown).png",
+      "filePath": "hair/반묶음(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-243",
+      "layerType": "hair",
+      "name": "hair / 반묶음(yellow).png",
+      "filePath": "hair/반묶음(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-244",
+      "layerType": "hair",
+      "name": "hair / 버섯머리.png",
+      "filePath": "hair/버섯머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-245",
+      "layerType": "hair",
+      "name": "hair / 사무라이(black).png",
+      "filePath": "hair/사무라이(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-246",
+      "layerType": "hair",
+      "name": "hair / 사무라이(brown).png",
+      "filePath": "hair/사무라이(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-247",
+      "layerType": "hair",
+      "name": "hair / 삭발.png",
+      "filePath": "hair/삭발.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-248",
+      "layerType": "hair",
+      "name": "hair / 생머리(brown).png",
+      "filePath": "hair/생머리(brown).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-249",
+      "layerType": "hair",
+      "name": "hair / 숏컷(black).png",
+      "filePath": "hair/숏컷(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-250",
+      "layerType": "hair",
+      "name": "hair / 숏컷(green).png",
+      "filePath": "hair/숏컷(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-251",
+      "layerType": "hair",
+      "name": "hair / 쉐프머리(blue).png",
+      "filePath": "hair/쉐프머리(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-252",
+      "layerType": "hair",
+      "name": "hair / 쉐프머리.png",
+      "filePath": "hair/쉐프머리.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-253",
+      "layerType": "hair",
+      "name": "hair / 싸이.png",
+      "filePath": "hair/싸이.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-254",
+      "layerType": "hair",
+      "name": "hair / 아이키.png",
+      "filePath": "hair/아이키.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-255",
+      "layerType": "hair",
+      "name": "hair / 앞머리빗자루(black).png",
+      "filePath": "hair/앞머리빗자루(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-256",
+      "layerType": "hair",
+      "name": "hair / 양갈래(black).png",
+      "filePath": "hair/양갈래(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-257",
+      "layerType": "hair",
+      "name": "hair / 양갈래.png",
+      "filePath": "hair/양갈래.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-258",
+      "layerType": "hair",
+      "name": "hair / 양갈래당고(black).PNG",
+      "filePath": "hair/양갈래당고(black).PNG",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-259",
+      "layerType": "hair",
+      "name": "hair / 양갈래당고(red).PNG",
+      "filePath": "hair/양갈래당고(red).PNG",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-260",
+      "layerType": "hair",
+      "name": "hair / 테니스공.png",
+      "filePath": "hair/테니스공.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-261",
+      "layerType": "hair",
+      "name": "hair / 파마(black).png",
+      "filePath": "hair/파마(black).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-262",
+      "layerType": "hair",
+      "name": "hair / 파마(yellow).png",
+      "filePath": "hair/파마(yellow).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hair-263",
+      "layerType": "hair",
+      "name": "hair / 표범.png",
+      "filePath": "hair/표범.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-264",
+      "layerType": "hat",
+      "name": "hat / 고양이비니(blue).png",
+      "filePath": "hat/고양이비니(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-265",
+      "layerType": "hat",
+      "name": "hat / 고양이비니(green).png",
+      "filePath": "hat/고양이비니(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-266",
+      "layerType": "hat",
+      "name": "hat / 베레모(blue).png",
+      "filePath": "hat/베레모(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-267",
+      "layerType": "hat",
+      "name": "hat / 베레모(red).png",
+      "filePath": "hat/베레모(red).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-268",
+      "layerType": "hat",
+      "name": "hat / 블렉비니.png",
+      "filePath": "hat/블렉비니.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-269",
+      "layerType": "hat",
+      "name": "hat / 아이스비니(blue).png",
+      "filePath": "hat/아이스비니(blue).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "hat-270",
+      "layerType": "hat",
+      "name": "hat / 아이스비니(green).png",
+      "filePath": "hat/아이스비니(green).png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "mell_studio_asset-271",
+      "layerType": "mell_studio_asset",
+      "name": "mell_studio_asset / MELLSTUDIO_LOGO.png",
+      "filePath": "mell_studio_asset/MELLSTUDIO_LOGO.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "mell_studio_asset-272",
+      "layerType": "mell_studio_asset",
+      "name": "mell_studio_asset / background.png",
+      "filePath": "mell_studio_asset/background.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "mell_studio_asset-273",
+      "layerType": "mell_studio_asset",
+      "name": "mell_studio_asset / example.png",
+      "filePath": "mell_studio_asset/example.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "mell_studio_asset-274",
+      "layerType": "mell_studio_asset",
+      "name": "mell_studio_asset / frame.png",
+      "filePath": "mell_studio_asset/frame.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    },
+    {
+      "id": "mell_studio_asset-275",
+      "layerType": "mell_studio_asset",
+      "name": "mell_studio_asset / theme.png",
+      "filePath": "mell_studio_asset/theme.png",
+      "format": "png",
+      "tintable": false,
+      "tags": []
+    }
+  ]
+}

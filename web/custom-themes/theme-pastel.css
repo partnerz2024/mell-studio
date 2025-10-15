@@ -1,0 +1,41 @@
+/* 파스텔 핑크 테마 */
+/* styles.css의 :root 부분을 이것으로 교체하세요 */
+
+:root {
+	--bg-primary: #fff0f6;
+	--bg-secondary: #ffe3f0;
+	--bg-tertiary: #ffd1e8;
+	--text-primary: #2d2d2d;
+	--text-secondary: #6d6d6d;
+	--accent: #ff6b9d;
+	--accent-hover: #ff4d7d;
+	--success: #ff85a8;
+	--border: #ffb3cc;
+	--shadow: rgba(255, 107, 157, 0.2);
+}
+
+/* 추가 스타일 */
+.preview-section {
+	background: linear-gradient(180deg, #ffe3f0 0%, #fff0f6 100%);
+}
+
+.tab-navigation {
+	background: #ffe3f0;
+	border-bottom: 2px solid #ffb3cc;
+}
+
+.thumb {
+	background: #ffffff;
+	border: 2px solid #ffb3cc;
+}
+
+.thumb:hover {
+	transform: translateY(-3px) scale(1.05);
+	box-shadow: 0 6px 12px rgba(255, 107, 157, 0.3);
+}
+
+.action-btn.primary {
+	background: linear-gradient(135deg, #ff6b9d 0%, #ff4d7d 100%);
+	box-shadow: 0 4px 12px rgba(255, 107, 157, 0.4);
+}
+
