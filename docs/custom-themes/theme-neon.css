@@ -1,0 +1,58 @@
+/* 네온 그린 테마 */
+/* styles.css의 :root 부분을 이것으로 교체하세요 */
+
+:root {
+	--bg-primary: #000000;
+	--bg-secondary: #0a0a0a;
+	--bg-tertiary: #1a1a1a;
+	--text-primary: #00ff88;
+	--text-secondary: #00cc66;
+	--accent: #00ff88;
+	--accent-hover: #00dd77;
+	--success: #00ff88;
+	--border: #00ff88;
+	--shadow: rgba(0, 255, 136, 0.5);
+}
+
+/* 추가 스타일 */
+.preview-section {
+	background: #000000;
+	box-shadow: inset 0 0 50px rgba(0, 255, 136, 0.1);
+}
+
+.tab-navigation {
+	background: #000000;
+	border-bottom: 2px solid #00ff88;
+}
+
+.thumb {
+	border: 2px solid #00ff88;
+	box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+	background: #000000;
+}
+
+.thumb.selected {
+	box-shadow: 0 0 25px #00ff88, inset 0 0 15px rgba(0, 255, 136, 0.2);
+	border-width: 3px;
+}
+
+.action-btn.primary {
+	background: #000000;
+	border: 2px solid #00ff88;
+	color: #00ff88;
+	box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+.action-btn.primary:active {
+	box-shadow: 0 0 30px rgba(0, 255, 136, 0.8);
+}
+
+.tab-btn.active {
+	color: #00ff88;
+	text-shadow: 0 0 10px #00ff88;
+}
+
+.tab-btn.active::after {
+	box-shadow: 0 0 10px #00ff88;
+}
+

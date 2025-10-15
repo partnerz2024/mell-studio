@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.cache
+dist/
+build/
+
+# 큰 파일들
+complete_encoded_images.json
+encoded_images.json
+image_data.txt
+mell-complete-offline.html
+

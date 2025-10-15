@@ -1,0 +1,19 @@
+# 서버 관련
+.DS_Store
+*.log
+node_modules/
+
+# 임시 파일
+*.tmp
+*.cache
+
+# 에디터 설정
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 빌드 출력
+dist/
+build/
+

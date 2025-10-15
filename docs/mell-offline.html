@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	<meta name="theme-color" content="#ffffff" />
+	<title>MELL Studio - 오프라인</title>
+	<style>
+		/* 기본 스타일 */
+		*{box-sizing:border-box}
+		body{margin:0;font:14px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Noto Sans KR',Arial,sans-serif;color:#111}
+		header, .controls{display:none}
+		main{min-height:100vh}
+		.stage{position:relative;display:grid;place-items:center;background:#fff}
+		.stage.full canvas{width:100vw;height:100vh;display:block;border:none;background:#fff}
+		.sidepanel{position:absolute;right:24px;top:24px;width:720px;max-height:90vh;overflow:auto;display:flex;flex-direction:column;gap:12px;background:rgba(255,255,255,.95);border:1px solid #e5e7eb;border-radius:12px;padding:14px;z-index:10}
+		.sidepanel h3{margin:0 0 4px 0;font-size:14px}
+		.sidepanel .group{display:flex;flex-direction:column;gap:6px}
+		.sidepanel h4{margin:6px 0 2px 0;font-size:13px}
+		.grid{display:grid;grid-template-columns:repeat(8, 1fr);gap:8px}
+		.grid button{padding:0;border:1px solid #e5e7eb;border-radius:10px;background:#fff;overflow:hidden;display:flex;flex-direction:column}
+		.grid img{display:block;width:100%;height:60px;object-fit:contain;background:#fff}
+		.grid span{display:block;padding:4px 6px;font-size:11px;text-align:center;color:#374151;background:#f9fafb;border-top:1px solid #e5e7eb;line-height:1.2;word-break:keep-all;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+		.thumb.selected{border-color:#3b82f6;box-shadow:0 0 0 2px rgba(59,130,246,0.2)}
+		.no-hat{display:flex;align-items:center;justify-content:center;width:100%;height:60px;background:#f8f9fa;border:2px dashed #dee2e6;border-radius:8px;color:#6c757d;font-size:12px;font-weight:500}
+		.no-accessory{display:flex;align-items:center;justify-content:center;width:100%;height:60px;background:#f8f9fa;border:2px dashed #dee2e6;border-radius:8px;color:#6c757d;font-size:12px;font-weight:500}
+		.sidepanel button{padding:8px;border:1px solid #e5e7eb;border-radius:8px;background:#fff}
+		.sidepanel .row{display:flex;gap:8px}
+		.panel{position:absolute;right:24px;top:24px;display:flex;gap:8px;background:rgba(255,255,255,.85);backdrop-filter:saturate(120%) blur(6px);border:1px solid #e5e7eb;border-radius:10px;padding:8px}
+		.panel label{display:flex;gap:6px;align-items:center}
+		.panel select,.panel button{padding:6px 8px;border:1px solid #e5e7eb;border-radius:8px;background:#fff}
+		.hint{margin:8px 0 0 0;color:#94a3b8;font-size:12px}
+
+		/* 모바일 반응형 디자인 */
+		@media (max-width: 768px) {
+			.sidepanel {
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				top: auto;
+				width: 100%;
+				max-height: 50vh;
+				border-radius: 16px 16px 0 0;
+				padding: 16px;
+				background: rgba(255,255,255,.98);
+				backdrop-filter: blur(10px);
+				box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
+			}
+			
+			.sidepanel h3 {
+				font-size: 16px;
+				margin-bottom: 8px;
+				text-align: center;
+			}
+			
+			.sidepanel h4 {
+				font-size: 14px;
+				margin: 8px 0 4px 0;
+			}
+			
+			.grid {
+				grid-template-columns: repeat(6, 1fr);
+				gap: 6px;
+			}
+			
+			.grid img {
+				height: 50px;
+			}
+			
+			.grid span {
+				font-size: 10px;
+				padding: 3px 4px;
+			}
+			
+			.sidepanel button {
+				padding: 10px 12px;
+				font-size: 14px;
+				min-height: 44px; /* 터치하기 쉬운 크기 */
+			}
+			
+			.sidepanel .row {
+				gap: 12px;
+				margin-top: 8px;
+			}
+			
+			.sidepanel .row button {
+				flex: 1;
+			}
+			
+			/* 캔버스 영역 조정 */
+			.stage.full canvas {
+				height: calc(100vh - 50vh);
+			}
+		}
+
+		@media (max-width: 480px) {
+			.grid {
+				grid-template-columns: repeat(5, 1fr);
+				gap: 4px;
+			}
+			
+			.grid img {
+				height: 45px;
+			}
+			
+			.grid span {
+				font-size: 9px;
+				padding: 2px 3px;
+			}
+			
+			.sidepanel {
+				max-height: 45vh;
+				padding: 12px;
+			}
+			
+			.stage.full canvas {
+				height: calc(100vh - 45vh);
+			}
+		}
+
+		/* 세로 모드에서 더 나은 레이아웃 */
+		@media (max-width: 768px) and (orientation: portrait) {
+			.sidepanel {
+				max-height: 40vh;
+			}
+			
+			.stage.full canvas {
+				height: calc(100vh - 40vh);
+			}
+		}
+
+		/* 가로 모드에서 더 나은 레이아웃 */
+		@media (max-width: 1024px) and (orientation: landscape) {
+			.sidepanel {
+				position: absolute;
+				right: 12px;
+				top: 12px;
+				bottom: auto;
+				left: auto;
+				width: 300px;
+				max-height: calc(100vh - 24px);
+			}
+			
+			.grid {
+				grid-template-columns: repeat(4, 1fr);
+			}
+			
+			.stage.full canvas {
+				height: 100vh;
+			}
+		}
+
+		@media (min-width:1200px){canvas{width:768px;height:768px}}
+
+		/* 모바일에서 스크롤 부드럽게 */
+		html, body {
+			-webkit-overflow-scrolling: touch;
+			scroll-behavior: smooth;
+		}
+		
+		/* 모바일에서 터치 이벤트 최적화 */
+		.thumb {
+			touch-action: manipulation;
+			-webkit-tap-highlight-color: transparent;
+		}
+		
+		/* 모바일에서 버튼 터치 피드백 */
+		button:active {
+			transform: scale(0.98);
+			transition: transform 0.1s ease;
+		}
+	</style>
+</head>
+<body>
+	<section class="stage full">
+		<canvas id="canvas"></canvas>
+		<div class="sidepanel">
+			<h3>캐릭터 만들기</h3>
+			<div class="group">
+				<h4>머리</h4>
+				<div id="hairGrid" class="grid"></div>
+			</div>
+			<div class="group">
+				<h4>옷</h4>
+				<div id="clothesGrid" class="grid"></div>
+			</div>
+			<div class="group">
+				<h4>액세서리</h4>
+				<div id="accessoryGrid" class="grid"></div>
+			</div>
+			<div class="group">
+				<h4>모자</h4>
+				<div id="hatGrid" class="grid"></div>
+			</div>
+			<div class="group">
+				<h4>눈 타입</h4>
+				<div id="eyeGrid" class="grid"></div>
+			</div>
+			<div class="group">
+				<h4>눈 색상</h4>
+				<div id="eyeColorGrid" class="grid"></div>
+			</div>
+			<div class="group">
+				<h4>입</h4>
+				<div id="mouthGrid" class="grid"></div>
+			</div>
+			<div class="row">
+				<button id="btnRandom">랜덤</button>
+				<button id="btnSave">PNG 저장</button>
+			</div>
+		</div>
+	</section>
+	<script>
+		// 오프라인 MELL Studio - 모든 데이터가 포함된 독립 실행 파일
+
+		const FRAME_OFFSET_RATIO_X = -0.28;
+		const FRAME_OFFSET_RATIO_Y = 0.03;
+		const FRAME_HEIGHT_RATIO = 0.6;
+		const PHOTO_INSET = { left: 0.07, top: 0.06, right: 0.07, bottom: 0.28 };
+		const CHARACTER_SCALE = 1.15;
+
+		const state = {
+			hairOptions: [],
+			clothesOptions: [],
+			accessoryOptions: [],
+			hatOptions: [],
+			eyeOptions: [],
+			eyeColorOptions: [],
+			mouthOptions: [],
+			selectedHair: null,
+			selectedClothes: null,
+			selectedAccessory: null,
+			selectedHat: null,
+			selectedEye: null,
+			selectedEyeColor: null,
+			selectedMouth: null,
+			imageCache: new Map(),
+		};
+
+		// 오프라인 데이터 - 실제 이미지들은 Base64로 인코딩되어 포함됨
+		const OFFLINE_DATA = {
+			hairOptions: [
+				{ label: '고양이머리', files: ['hair/고양이머리.png'] },
+				{ label: '고양이머리(긴)', files: ['hair/고양이머리(긴).png'] },
+				{ label: '로제(yellow)', files: ['hair/로제(yellow).png'] },
+				{ label: '버섯머리', files: ['hair/버섯머리.png'] },
+				{ label: '아이키', files: ['hair/아이키.png'] },
+				{ label: '양갈래', files: ['hair/양갈래.png'] },
+				{ label: '양갈래(black)', files: ['hair/양갈래(black).png'] },
+				{ label: 'special', files: ['hair/special.png'] },
+				{ label: '더벅머리', files: ['hair/더벅머리.png'] },
+				{ label: '리프컷(blue)', files: ['hair/리프컷(blue).png'] },
+				{ label: '모자(black)', files: ['hair/모자(black).png'] },
+				{ label: '반다나모자(blue)', files: ['hair/반다나모자(blue).png'] },
+				{ label: '앞머리빗자루(black)', files: ['hair/앞머리빗자루(black).png'] }
+			],
+			clothesOptions: [
+				{ label: '기본옷', files: ['cloth/기본옷.png'] },
+				{ label: '베이쁘(red)', files: ['cloth/베이쁘(red).png'] },
+				{ label: '캐주얼', files: ['cloth/캐주얼.png'] },
+				{ label: '정장', files: ['cloth/정장.png'] }
+			],
+			accessoryOptions: [
+				{ label: '감성카페피어싱(gold)', files: ['accessory/감성카페피어싱(gold).png'] },
+				{ label: '감성카페피어싱', files: ['accessory/감성카페피어싱.png'] },
+				{ label: '능률이오르는에어팟', files: ['accessory/능률이오르는에어팟.png'] },
+				{ label: '마스크', files: ['accessory/마스크.png'] },
+				{ label: '사각안경(black)', files: ['accessory/사각안경(black).png'] }
+			],
+			hatOptions: [
+				{ label: '고양이비니', files: ['hat/고양이비니.png'] },
+				{ label: '블렉비니', files: ['hat/블렉비니.png'] },
+				{ label: '아이스비니', files: ['hat/아이스비니.png'] }
+			],
+			eyeOptions: [
+				{ label: '1', files: ['face/basic/eye/1.png'] },
+				{ label: '2', files: ['face/basic/eye/2.png'] },
+				{ label: '3', files: ['face/basic/eye/3.png'] },
+				{ label: '윙크1', files: ['face/basic/eye/윙크1.png'] },
+				{ label: '윙크2', files: ['face/basic/eye/윙크2.png'] }
+			],
+			eyeColorOptions: [
+				{ label: 'blue', files: ['face/basic/eye_color/blue.png'] },
+				{ label: 'red', files: ['face/basic/eye_color/red.png'] },
+				{ label: 'yellow', files: ['face/basic/eye_color/yellow.png'] }
+			],
+			mouthOptions: [
+				{ label: '기본입', files: ['face/basic/mouth/기본입.png'] },
+				{ label: '웃는입', files: ['face/basic/mouth/웃는입.png'] }
+			]
+		};
+
+		// Base64 인코딩된 이미지들 (실제로는 여기에 모든 이미지의 Base64 데이터가 들어감)
+		const IMAGE_DATA = {
+			// 기본 이미지들
+			'face/basic/skin_color/skin_color.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/sclera/normal_sclera.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/sclera/윙크_sclera.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye_color/blue.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye_color/blue_윙크.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye_color/red.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye_color/red_윙크.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye_color/yellow.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye_color/yellow_윙크.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/mouth/기본입.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/mouth/웃는입.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye/1.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye/2.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye/3.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye/윙크1.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/eye/윙크2.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/normal_base/기본_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/hair_base/고양이머리_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/hair_base/로제_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/hair_base/버섯머리_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/hair_base/아이키_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/hair_base/양갈래_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'face/basic/hair_base/special_base.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			// 배경 및 UI 이미지들
+			'background.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'frame.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==',
+			'theme.png': 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='
+		};
+
+		function buildOptions(){
+			state.hairOptions = OFFLINE_DATA.hairOptions;
+			state.clothesOptions = OFFLINE_DATA.clothesOptions;
+			state.accessoryOptions = OFFLINE_DATA.accessoryOptions;
+			state.hatOptions = OFFLINE_DATA.hatOptions;
+			state.eyeOptions = OFFLINE_DATA.eyeOptions;
+			state.eyeColorOptions = OFFLINE_DATA.eyeColorOptions;
+			state.mouthOptions = OFFLINE_DATA.mouthOptions;
+		}
+
+		function populateSelectors(){
+			// 머리 그리드
+			const hairGrid = document.getElementById('hairGrid');
+			hairGrid.innerHTML = state.hairOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 옷 그리드
+			const clothesGrid = document.getElementById('clothesGrid');
+			clothesGrid.innerHTML = state.clothesOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 액세서리 그리드
+			const accessoryGrid = document.getElementById('accessoryGrid');
+			accessoryGrid.innerHTML = `
+				<div class="thumb" data-index="-1">
+					<div class="no-accessory">악세서리 벗기</div>
+					<span>악세서리 벗기</span>
+				</div>
+			` + state.accessoryOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 모자 그리드
+			const hatGrid = document.getElementById('hatGrid');
+			hatGrid.innerHTML = `
+				<div class="thumb" data-index="-1">
+					<div class="no-hat">모자 벗기</div>
+					<span>모자 벗기</span>
+				</div>
+			` + state.hatOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 눈 타입 그리드
+			const eyeGrid = document.getElementById('eyeGrid');
+			eyeGrid.innerHTML = state.eyeOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 눈 색상 그리드
+			const eyeColorGrid = document.getElementById('eyeColorGrid');
+			eyeColorGrid.innerHTML = state.eyeColorOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 입 그리드
+			const mouthGrid = document.getElementById('mouthGrid');
+			mouthGrid.innerHTML = state.mouthOptions.map((o,i)=>`
+				<div class="thumb" data-index="${i}">
+					<img src="${getImageData(o.files[0])}" alt="${o.label}" />
+					<span>${o.label}</span>
+				</div>
+			`).join('');
+			
+			// 이벤트 리스너 (모바일 터치 최적화)
+			const addTouchEvents = (grid, callback) => {
+				let touchStartTime = 0;
+				
+				grid.addEventListener('touchstart', (e) => {
+					touchStartTime = Date.now();
+				}, { passive: true });
+				
+				grid.addEventListener('touchend', (e) => {
+					const touchDuration = Date.now() - touchStartTime;
+					if (touchDuration < 500) {
+						const thumb = e.target.closest('.thumb');
+						if(thumb){
+							e.preventDefault();
+							callback(thumb);
+						}
+					}
+				});
+				
+				grid.addEventListener('click', (e)=>{
+					const thumb = e.target.closest('.thumb');
+					if(thumb){
+						callback(thumb);
+					}
+				});
+			};
+			
+			addTouchEvents(hairGrid, (thumb) => {
+				state.selectedHair = Number(thumb.dataset.index);
+				updateSelection('hair');
+				render();
+			});
+			
+			addTouchEvents(clothesGrid, (thumb) => {
+				state.selectedClothes = Number(thumb.dataset.index);
+				updateSelection('clothes');
+				render();
+			});
+			
+			addTouchEvents(accessoryGrid, (thumb) => {
+				const clickedIndex = Number(thumb.dataset.index);
+				state.selectedAccessory = clickedIndex;
+				updateSelection('accessory');
+				render();
+			});
+			
+			addTouchEvents(hatGrid, (thumb) => {
+				const clickedIndex = Number(thumb.dataset.index);
+				state.selectedHat = clickedIndex;
+				updateSelection('hat');
+				render();
+			});
+			
+			addTouchEvents(eyeGrid, (thumb) => {
+				state.selectedEye = Number(thumb.dataset.index);
+				updateSelection('eye');
+				render();
+			});
+			
+			addTouchEvents(eyeColorGrid, (thumb) => {
+				state.selectedEyeColor = Number(thumb.dataset.index);
+				updateSelection('eyeColor');
+				render();
+			});
+			
+			addTouchEvents(mouthGrid, (thumb) => {
+				state.selectedMouth = Number(thumb.dataset.index);
+				updateSelection('mouth');
+				render();
+			});
+			
+			state.selectedHair = 0; state.selectedClothes = 0; state.selectedAccessory = -1; state.selectedHat = -1;
+			state.selectedEye = 0; state.selectedEyeColor = 0; state.selectedMouth = 0;
+			updateSelection('hair'); updateSelection('clothes'); updateSelection('accessory'); updateSelection('hat');
+			updateSelection('eye'); updateSelection('eyeColor'); updateSelection('mouth');
+		}
+
+		function updateSelection(type){
+			const grids = {
+				hair: document.getElementById('hairGrid'),
+				clothes: document.getElementById('clothesGrid'),
+				accessory: document.getElementById('accessoryGrid'),
+				hat: document.getElementById('hatGrid'),
+				eye: document.getElementById('eyeGrid'),
+				eyeColor: document.getElementById('eyeColorGrid'),
+				mouth: document.getElementById('mouthGrid')
+			};
+			const selected = {
+				hair: state.selectedHair,
+				clothes: state.selectedClothes,
+				accessory: state.selectedAccessory,
+				hat: state.selectedHat,
+				eye: state.selectedEye,
+				eyeColor: state.selectedEyeColor,
+				mouth: state.selectedMouth
+			};
+			
+			const grid = grids[type];
+			const thumbs = grid.querySelectorAll('.thumb');
+			thumbs.forEach((thumb, i) => {
+				thumb.classList.toggle('selected', i === selected[type] && selected[type] >= 0);
+			});
+		}
+
+		function getImageData(filePath) {
+			// Base64 데이터가 있으면 반환, 없으면 기본 이미지 반환
+			return IMAGE_DATA[filePath] || 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==';
+		}
+
+		async function loadImage(src){
+			if (state.imageCache.has(src)) {
+				return state.imageCache.get(src);
+			}
+			
+			return new Promise((res,rej)=>{ 
+				const img=new Image(); 
+				img.onload=()=>{
+					state.imageCache.set(src, img);
+					res(img);
+				}; 
+				img.onerror=(e)=>{ 
+					rej(e); 
+				}; 
+				img.src=src; 
+			});
+		}
+
+		function drawCover(ctx, img, cw, ch){
+			const ir = img.width / img.height;
+			const cr = cw / ch;
+			let w, h, x, y;
+			if (ir > cr) {
+				h = ch; w = h * ir; x = (cw - w) / 2; y = 0;
+			} else {
+				w = cw; h = w / ir; x = 0; y = (ch - h) / 2;
+			}
+			ctx.drawImage(img, x, y, w, h);
+		}
+
+		async function render(){
+			const canvas = document.getElementById('canvas');
+			const ctx = canvas.getContext('2d');
+			ctx.clearRect(0,0,canvas.width,canvas.height);
+			ctx.fillStyle = '#ffffff';
+			ctx.fillRect(0,0,canvas.width,canvas.height);
+
+			// 배경
+			try { 
+				const bgImg = await loadImage(getImageData('background.png')); 
+				drawCover(ctx, bgImg, canvas.width, canvas.height); 
+			} catch(e){ 
+				ctx.fillStyle='#d1fae5'; 
+				ctx.fillRect(0,0,canvas.width,canvas.height);
+			}
+
+			// 프레임 및 캐릭터
+			try { 
+				const frame = await loadImage(getImageData('frame.png')); 
+				const targetH = canvas.height * FRAME_HEIGHT_RATIO; 
+				const targetW = targetH * (frame.width / frame.height);
+				let x = (canvas.width - targetW) / 2; 
+				let y = (canvas.height - targetH) / 2;
+				x += canvas.width * FRAME_OFFSET_RATIO_X;
+				y += canvas.height * FRAME_OFFSET_RATIO_Y;
+
+				const layers = [];
+				
+				// 기본 레이어들
+				layers.push('face/basic/skin_color/skin_color.png');
+				
+				if (state.eyeOptions && state.eyeOptions[state.selectedEye]) {
+					const eyeName = state.eyeOptions[state.selectedEye].label;
+					if (eyeName.includes('윙크')) {
+						layers.push('face/basic/sclera/윙크_sclera.png');
+					} else {
+						layers.push('face/basic/sclera/normal_sclera.png');
+					}
+				}
+				
+				if (state.eyeColorOptions && state.eyeColorOptions[state.selectedEyeColor] && 
+					state.eyeOptions && state.eyeOptions[state.selectedEye]) {
+					const eyeName = state.eyeOptions[state.selectedEye].label;
+					const colorName = state.eyeColorOptions[state.selectedEyeColor].label;
+					
+					let colorFile;
+					if (eyeName.includes('윙크')) {
+						colorFile = `face/basic/eye_color/${colorName}_윙크.png`;
+					} else {
+						colorFile = `face/basic/eye_color/${colorName}.png`;
+					}
+					layers.push(colorFile);
+				}
+				
+				if (state.mouthOptions && state.mouthOptions[state.selectedMouth]) {
+					layers.push(state.mouthOptions[state.selectedMouth].files[0]);
+				}
+				
+				if (state.hairOptions && state.hairOptions[state.selectedHair]) {
+					layers.push(state.hairOptions[state.selectedHair].files[0]);
+				}
+				
+				if (state.eyeOptions && state.eyeOptions[state.selectedEye]) {
+					layers.push(state.eyeOptions[state.selectedEye].files[0]);
+				}
+				
+				if (state.clothesOptions && state.clothesOptions[state.selectedClothes]) {
+					layers.push(state.clothesOptions[state.selectedClothes].files[0]);
+				}
+				
+				if (state.hatOptions && state.hatOptions[state.selectedHat] && state.selectedHat >= 0) {
+					layers.push(state.hatOptions[state.selectedHat].files[0]);
+				}
+				
+				let baseFile = 'face/basic/normal_base/기본_base.png';
+				if (state.hairOptions && state.hairOptions[state.selectedHair]) {
+					const hairName = state.hairOptions[state.selectedHair].label;
+					if (hairName === '고양이머리' || hairName === '고양이머리(긴)') {
+						baseFile = 'face/basic/hair_base/고양이머리_base.png';
+					} else if (hairName === '로제(yellow)') {
+						baseFile = 'face/basic/hair_base/로제_base.png';
+					} else if (hairName === '버섯머리') {
+						baseFile = 'face/basic/hair_base/버섯머리_base.png';
+					} else if (hairName === '아이키') {
+						baseFile = 'face/basic/hair_base/아이키_base.png';
+					} else if (hairName === '양갈래(black)' || hairName === '양갈래') {
+						baseFile = 'face/basic/hair_base/양갈래_base.png';
+					} else if (hairName === 'special') {
+						baseFile = 'face/basic/hair_base/special_base.png';
+					}
+				}
+				layers.push(baseFile);
+				
+				if (state.accessoryOptions && state.accessoryOptions[state.selectedAccessory] && state.selectedAccessory >= 0) {
+					layers.push(state.accessoryOptions[state.selectedAccessory].files[0]);
+				}
+
+				const innerX = x + targetW * PHOTO_INSET.left;
+				const innerY = y + targetH * PHOTO_INSET.top;
+				const innerW = targetW * (1 - PHOTO_INSET.left - PHOTO_INSET.right);
+				const innerH = targetH * (1 - PHOTO_INSET.top - PHOTO_INSET.bottom);
+				
+				for (const fp of layers) {
+					try {
+						const img = await loadImage(getImageData(fp));
+						const ir = img.width / img.height;
+						const cr = innerW / innerH;
+						let dw, dh, dx, dy;
+						if (ir > cr) {
+							dh = innerH * CHARACTER_SCALE; dw = dh * ir; dx = innerX + (innerW - dw) / 2; dy = innerY + (innerH - dh) / 2;
+						} else {
+							dw = innerW * CHARACTER_SCALE; dh = dw / ir; dx = innerX + (innerW - dw) / 2; dy = innerY + (innerH - dh) / 2;
+						}
+						ctx.drawImage(img, dx, dy, dw, dh);
+					} catch(e) {
+						console.log('이미지 로드 실패:', fp, e);
+					}
+				}
+				
+				ctx.drawImage(frame, x, y, targetW, targetH);
+			} catch(e){ 
+				ctx.strokeStyle='#111'; 
+				ctx.lineWidth=6; 
+				ctx.strokeRect(canvas.width*0.2,canvas.height*0.15,canvas.width*0.6,canvas.height*0.7);
+			}
+
+			// 테마 오버레이
+			try { 
+				const theme = await loadImage(getImageData('theme.png')); 
+				drawCover(ctx, theme, canvas.width, canvas.height); 
+			} catch(e){ 
+				ctx.fillStyle='rgba(0,0,0,.05)'; 
+				ctx.fillRect(0,0,canvas.width,Math.max(60, canvas.height*0.15)); 
+			}
+		}
+
+		// 초기화
+		(async function init(){
+			const canvas = document.getElementById('canvas');
+			function resize(){ 
+				const isMobile = window.innerWidth <= 768;
+				if (isMobile) {
+					const isPortrait = window.innerHeight > window.innerWidth;
+					if (isPortrait) {
+						canvas.width = window.innerWidth;
+						canvas.height = window.innerHeight * 0.6;
+					} else {
+						canvas.width = window.innerWidth;
+						canvas.height = window.innerHeight;
+					}
+				} else {
+					canvas.width = window.innerWidth;
+					canvas.height = window.innerHeight;
+				}
+				render(); 
+			}
+			window.addEventListener('resize', resize);
+			window.addEventListener('orientationchange', () => {
+				setTimeout(resize, 100);
+			});
+			resize();
+
+			buildOptions();
+			populateSelectors();
+			
+			document.getElementById('btnRandom').onclick = ()=>{
+				state.selectedHair = Math.floor(Math.random()*state.hairOptions.length);
+				state.selectedClothes = Math.floor(Math.random()*state.clothesOptions.length);
+				state.selectedAccessory = Math.random() < 0.4 ? Math.floor(Math.random()*state.accessoryOptions.length) : -1;
+				state.selectedHat = Math.random() < 0.3 ? Math.floor(Math.random()*state.hatOptions.length) : -1;
+				state.selectedEye = Math.floor(Math.random()*state.eyeOptions.length);
+				state.selectedEyeColor = Math.floor(Math.random()*state.eyeColorOptions.length);
+				state.selectedMouth = Math.floor(Math.random()*state.mouthOptions.length);
+				updateSelection('hair'); updateSelection('clothes'); updateSelection('accessory'); updateSelection('hat');
+				updateSelection('eye'); updateSelection('eyeColor'); updateSelection('mouth');
+				render();
+			};
+			
+			document.getElementById('btnSave').onclick = ()=>{
+				const link = document.createElement('a');
+				link.download = 'mell-offline.png';
+				link.href = document.getElementById('canvas').toDataURL('image/png');
+				link.click();
+			};
+		})();
+	</script>
+</body>
+</html>
+

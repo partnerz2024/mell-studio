@@ -1,0 +1,34 @@
+/* 다크 블루 테마 */
+/* styles.css의 :root 부분을 이것으로 교체하세요 */
+
+:root {
+	--bg-primary: #0a0e27;
+	--bg-secondary: #1a1f38;
+	--bg-tertiary: #2a2f48;
+	--text-primary: #e2e8f0;
+	--text-secondary: #94a3b8;
+	--accent: #3b82f6;
+	--accent-hover: #2563eb;
+	--success: #10b981;
+	--border: #334155;
+	--shadow: rgba(59, 130, 246, 0.3);
+}
+
+/* 추가 스타일 */
+.preview-section {
+	background: linear-gradient(180deg, #1a1f38 0%, #0a0e27 100%);
+}
+
+.thumb {
+	background: linear-gradient(135deg, #1a1f38, #0a0e27);
+}
+
+.thumb.selected {
+	border-color: #3b82f6;
+	box-shadow: 0 0 0 2px #3b82f6, 0 8px 16px rgba(59, 130, 246, 0.5);
+}
+
+.action-btn.primary {
+	background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
